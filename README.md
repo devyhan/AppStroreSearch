@@ -31,7 +31,7 @@ tuist generate
 
 <p>
     <img src="./GithubResources/Architecture.png" height="300px" title="Architecture"/>
-    <img src="./GithubResources/Directory.png" height="300px" title="Directory"/>
+    <img src="./GithubResources/Directory.png" height="200px" title="Directory"/>
 </p>
 
 여기 왼쪽에 보이는 각 계층(Layer)은 오른쪽의 프로젝트의 파일(Directory)로 구성하였어요 계층 구성은 아래에서 설명할 전체 모듈 구성도와 상관관계에 있어요
@@ -59,9 +59,9 @@ UI의존이 있는 모듈의 경우 디렉토리 구성은 클린 아키텍처 �
 다음 이미지는 UI의존이 있는 Feature 모듈인 Search 모듈의 구조에요
 
 <p>
-    <img src=".GithubResources/Feature.png" height="300px" title="SearchFeature"/>
-    <img src=".GithubResources/Sources.png" height="300px" title="SearchFeature/Sources"/>
-    <img src=".GithubResources/Interface.png" width="200px" title="SearchFeature/Interface"/>
+    <img src="./GithubResources/Feature.png" height="300px" title="SearchFeature"/>
+    <img src="./GithubResources/Sources.png" height="300px" title="SearchFeature/Sources"/>
+    <img src="./GithubResources/Interface.png" width="200px" title="SearchFeature/Interface"/>
 </p>
 
 *왼쪽부터 상위 디렉토리 Features의 하위 디렉토리 Sources와 Interface*
