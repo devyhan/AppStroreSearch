@@ -9,15 +9,15 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 import ProjectEnvironment
 
-let targetBaseBundleId = "\(env.bundleId).iOS"
+let targetBaseBundleId = "\(env.bundleId).iOS.TCA"
 let settings: SettingsDictionary = [:]
 
 let project = Project(
-  name: "\(env.name) iOS",
+  name: "\(env.name) iOS (SwiftUI, TCA)",
   settings: env.settings,
   targets: [
     Target(
-      name: "iOS",
+      name: "iOS (SwiftUI, TCA)",
       platform: .iOS,
       product: .app,
       productName: env.name,
@@ -44,7 +44,7 @@ let project = Project(
       infoPlist: env.infoPlist,
       sources: ["Tests/**"],
       dependencies: [
-        .target(name: "iOS"),
+        .target(name: "iOS (SwiftUI, TCA)"),
         .xctest
       ]
     )

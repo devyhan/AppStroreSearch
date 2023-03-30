@@ -9,6 +9,7 @@ public let env = ProjectEnvironment(
   targetVersion: "16.0",
   deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
   infoPlist: .infoPlist,
+  infoPlistUIKit: .infoPlistUIKit,
   spmPackages: .packages
 )
 
@@ -20,6 +21,7 @@ public struct ProjectEnvironment {
   public let targetVersion: String
   public let deploymentTarget: DeploymentTarget
   public let infoPlist: InfoPlist
+  public let infoPlistUIKit: InfoPlist
   public let spmPackages: SwiftPackageManagerDependencies
 
   public init(
@@ -30,6 +32,7 @@ public struct ProjectEnvironment {
     targetVersion: String,
     deploymentTarget: DeploymentTarget,
     infoPlist: InfoPlist,
+    infoPlistUIKit: InfoPlist,
     spmPackages: SwiftPackageManagerDependencies
   ) {
     self.name = name
@@ -39,6 +42,7 @@ public struct ProjectEnvironment {
     self.targetVersion = targetVersion
     self.deploymentTarget = deploymentTarget
     self.infoPlist = infoPlist
+    self.infoPlistUIKit = infoPlistUIKit
     self.spmPackages = spmPackages
   }
 }

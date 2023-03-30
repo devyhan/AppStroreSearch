@@ -10,7 +10,10 @@ import ProjectEnvironment
 
 let workspace = Workspace(
   name: env.name,
-  projects: ["App/iOS"],
+  projects: [
+    "App/iOS + TCA",
+    "App/iOS + RIBs"
+  ],
   schemes: [],
   additionalFiles: [
     "README.md"

@@ -28,7 +28,8 @@ let project = Project(
         .target(name: "\(projectName)Interface"),
         .project(target: "Components",  path: .relativeToRoot("UserInterface/Components")),
         .project(target: "Utils",  path: .relativeToRoot("Share/Utils")),
-        .project(target: "DependencyInjection",  path: .relativeToRoot("DependencyInjection"))
+        .project(target: "DependencyInjection",  path: .relativeToRoot("DependencyInjection")),
+        .SPM.TCACoordinators
       ]
     ),
     Target(
